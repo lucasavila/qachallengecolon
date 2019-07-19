@@ -23,7 +23,9 @@ hibernate:
 spring:
     profiles: production
     jpa:
-          daqtabase-platform: org.hibernate.dialect.PostgreSQL94Dialect
+        daqtabase-platform: org.hibernate.dialect.PostgreSQL94Dialect
+        hibernate:
+          ddl-auto: create-drop
     datasource:
 #          url: 'jdbc:postgresql://localhost:5432/tu_esquema'
           driver-class-name: 'org.postgresql.Driver'
